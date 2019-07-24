@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Test</title>
+		<link rel="stylesheet" href="main.css"/>
+	</head>
+
+	<body>
+		<div class="main-screen">
+			<div class="main-screen__img has-animate" style="background-image: url(ship.jpg)"></div>
+			<div class="main-screen__descr">
+				<div class="main-screen__title has-animate">The new age <br> of exploration</div>
+				<div class="main-screen__text has-animate">The future of shipping will be silent and emission free. MS Roald Amundsen is the first of two hybrid ships Hurtigruten will add to its fleet over the next few years, cutting emissions by sailing with electrical propulsion</div>
+				<a href="#" class="main-screen__link has-animate">about the ships</a>
+			</div>
+		</div>
+
+		<script>
+			function animate(elements) {
+				for (i = 0, length = elements.length; i < length; i++) {
+					elements[i].classList.add('is-animate');
+				}
+			}
+
+			window.onload = function () {
+				var elements = document.querySelectorAll(".has-animate");
+
+				animate(elements);
+			}
+		</script>
+	</body>
+</html>
